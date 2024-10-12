@@ -1,0 +1,14 @@
+h1{
+    color: aqua;
+    font-size: 80px;
+}
+
+p{
+    color: burlywood;
+    font-size: 50px;
+}
+
+div p{
+    color: darkgoldenrod;
+    font-size: 50px;
+}
