@@ -1,14 +1,66 @@
-h1{
-    color: aqua;
-    font-size: 80px;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --primary:#12bdff;
+    --dark-primary:#1b1f24;
 }
 
-p{
-    color: burlywood;
-    font-size: 50px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div p{
-    color: darkgoldenrod;
-    font-size: 50px;
+body{
+    font-family: "Nunito Sans", sans-serif;
 }
+
+header{
+    background-color: #1b1f24;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* logo */
+header .logo{
+    color: var(--primary);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+ ul li{
+    margin-right: 20px; 
+ }
+
+ ul li a{
+    color: white;
+    text-decoration: none;
+ }
+
+ ul li a:hover{
+    color: var(--primary);
+ }
+
+ /* header > buttons */
+ header button{
+    padding: 10px 20px;
+    font-weight:bold;
+    background-color: var(--dark-primary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 15px;
+ }
+
+ header button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+ }
+ 
