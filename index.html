@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azar Portfolio</title>
+    <title>Mohamed Azarudeen Portfolio</title>
 
-    <!-- Fontawesome Icon -->
+    <!-- Font awesome icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- Styling CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -28,15 +29,15 @@
             <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="./about.html">About</a>
+            <a href="#about-section">About</a>
           </li>
           <li>
-            <a href="./contact.html">Contact</a>
+            <a href="./#contact-section">Contact</a>
           </li>
         </ul>
       </div>
       <div>
-        <button>Download CV</button>
+        <button class="btn btn-dark-outlined">DOWNLOAD CV</button>
       </div>
     </header>
 
@@ -44,39 +45,149 @@
       <section class="hero-section">
         <div>
           <div>
-            <h4>Hi There !</h4>
-            <h2 class="hero-section_title">I am Azar</h2>
-            <p class="hero-section_desc">Fullstack developer</p>
+            <h4 title="Hello, How are you?">Hi there,</h4>
+            <h2 class="hero-section__title">
+              I'm Mohamed <span>Azarudeen</span>
+            </h2>
+            <p class="hero-section__desc">
+              A Curious human following his passion. I am interested in Game
+              Design and Development.
+            </p>
           </div>
-
           <ul class="social-icons">
-            <!-- Social Icons -->
+            <!-- Social icons will be appeared here -->
             <li>
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </li>
             <li>
-              <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
             </li>
             <li>
-              <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </li>
           </ul>
-
-          <div>
-            <button class="btn btn-primary">Hire Me</button>
-            <button class="btn">Download CV</button>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Hire me</button>
+            <button class="btn btn-dark-outlined">Download CV</button>
           </div>
         </div>
         <div>
           <img
-            src="https://png.pngtree.com/png-clipart/20231104/original/pngtree-happy-corporate-business-professional-one-man-clipart-white-background-png-image_13504468.png"
+            src="./assets/img/Azar_TBG.png"
             alt="Azar Portfolio"
-            width="450"
+            width="400"
           />
         </div>
       </section>
+
+      <!-- About me -->
+      <section class="about-section" id="about-section">
+        <img src="./assets/img/Azar_TBG.png" alt="Azar about me" />
+
+        <div class="about-section--desc">
+          <h4>
+            I am FullStack <span>Developer</span> <br />
+            & Web Developer
+          </h4>
+          <ul>
+            <li><strong>Experience:</strong> 2.6 years</li>
+            <li><strong>Speciality:</strong> Web Design</li>
+            <li><strong>Address:</strong> India</li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:mailforazarudeen@gmail.com"
+                >mailforazarudeen@gmail.com</a
+              >
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+919865906513">+919865906513</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary">Know more</button>
+        </div>
+      </section>
+
+      <!-- My Works -->
+      <section class="work-section">
+        <h4 class="work-section__title">My <span>Works</span></h4>
+        <div class="work-section-items">
+          <div class="work-section-box">
+            <span class="work-section-box__icon">
+              <i class="fa-solid fa-display"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+              <h4>Automation Testing</h4>
+              <p>Worked on sahi pro tool for automation Testing.</p>
+            </div>
+            <a href="#">See my work here...</a>
+          </div>
+          <div class="work-section-box">
+            <span class="work-section-box__icon">
+              <i class="fa-solid fa-flask"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+              <h4>Frontend Development</h4>
+              <p>Worked with HTML, CSS, Bootstrap, TailwindCSS, ReactJs.</p>
+            </div>
+            <a href="#">See my work here...</a>
+          </div>
+          <div class="work-section-box">
+            <span class="work-section-box__icon">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+              <h4>Backend Development</h4>
+              <p>Worked with NodeJS, Python, etc.</p>
+            </div>
+            <a href="#">See my work here...</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact-section" id="contact-section">
+        <h4>Contact <span>Me</span></h4>
+
+        <form>
+          <div>
+            <input type="text" name="name" placeholder="Full Name" />
+          </div>
+          <div>
+            <input type="text" name="subject" placeholder="Whats the matter?" />
+          </div>
+          <div>
+            <!-- <input type="text" name="description" placeholder="Enter briefly..."> -->
+            <textarea
+              name="description"
+              rows="5"
+              placeholder="Enter briefly..."
+            ></textarea>
+          </div>
+          <div>
+            <button class="btn btn-primary">Send a message</button>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        Copyright &copy; 2023 -
+        <a href="https://github.com/Azar-02" target="_blank"
+          >Mohamed Azarudeen</a
+        >
+        - All Rights Reserved.
+      </p>
+    </footer>
   </body>
 </html>
